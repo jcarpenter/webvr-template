@@ -1,0 +1,127 @@
+html {
+    /*position: absolute;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  cursor: crosshair;
+  position: relative;
+  overflow: hidden;
+}
+
+a {
+  color: #444444;
+}
+
+#bootup {
+  background-color: rgba(40,126,200,1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  padding: 2rem;
+  font: normal 100 3rem 'Roboto';
+  color: white;
+  /*text-transform: uppercase;*/
+}
+
+#fov {
+  background-image: url('../img/viewcone.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#instructions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 14em;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  z-index: 101;
+  padding: 0.25em .5em;
+  margin: 0 0 .75em 0.5em;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#instructions:hover, #instructionsButton:hover {
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+#instructions h1, h2 {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+#instructionsButton {
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.25);
+  padding: 0.25em .5em;
+  margin: 0 0 .75em 0.5em;
+  color: white;
+  border: 1px solid rgba(255,255,255,0);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /*border-top: 1px solid rgba(255,255,255,0.25);*/
+  /*margin-top: 1em;*/
+  /*padding-top: 1em;*/
+}
+
+li {
+  padding: 0;
+  margin: 0.5em 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.command {
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+  font-weight: 300;
+  border-bottom: 1px dotted var(--main-color);
+  color: var(--main-color);
+  white-space: nowrap;
+}
+
+.key {
+  font-weight: 400;
+  color: #FFCC00;
+  /*background: rgba(71,185,170,0.2);*/
+  /*padding: 0 1em;*/
+  float: right;
+}

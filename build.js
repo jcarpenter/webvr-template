@@ -17,7 +17,7 @@ function runBuild (f) {
       // noparse: [ 'three' ]
     });
     b.plugin(require('bundle-collapser/plugin'));
-    var transforms = [['glslify', { global: true }]];
+    var transforms = [[ 'installify', { save: true } ]];
     transforms.forEach(function (t) {
       b.transform(t);
     });

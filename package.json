@@ -1,23 +1,36 @@
 {
-  "name": "webvr-template",
+  "name": "hoverboard-prototypes",
   "version": "0.1.0",
-  "description": "A WebVR template with package & task manager",
+  "description": "WebVR Prototypes",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arturitu/webvr-template.git"
+    "url": ""
   },
   "main": "index.js",
   "dependencies": {
-    "three": "0.73.0"
+    "clone": "^1.0.2",
+    "es6-promise": "^3.2.1",
+    "eventemitter3": "^1.2.0",
+    "object-diff": "0.0.3",
+    "react": "^15.2.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "three": "^0.76.1",
+    "tween.js": "^16.3.4",
+    "webvr-boilerplate": "^0.4.5",
+    "webvr-polyfill": "^0.9.15"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
     "browserify": "^12.0.1",
     "budo": "^6.0.0",
     "bundle-collapser": "^1.2.1",
-    "opn": "^3.0.3",
     "glslify": "^2.3.1",
     "installify": "^1.0.2",
+    "opn": "^3.0.3",
     "pinkie-promise": "^1.0.0",
+    "redux-devtools": "^3.3.1",
     "simple-html-index": "^1.1.2",
     "uglify-js": "^2.5.0"
   },
@@ -26,8 +39,7 @@
     "build": "node build.js"
   },
   "authors": [
-    "Arturo Paracuellos <arturo@unboring.net>"
+    "Josh Carpenter <joshcarpenter@google.com>"
   ],
   "license": "MIT"
 }
-

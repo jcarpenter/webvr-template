@@ -1,8 +1,10 @@
 "use strict";
-var WebGL = require( "./webgl/Webgl" );
+
+var App = require( "./app" );
 
 global.window.onload = function() {
 
 	// run engine
-	var webGL = new WebGL();
+	var app = new App();
+  
 };

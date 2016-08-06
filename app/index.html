@@ -2,18 +2,40 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>WebVR Template</title>
+		<title>Hoverboard</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/index.css">
-		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<div id="webglContent"></div>
-		<!-- <footer>Made with love by <a href="http://www.unboring.net/" target="_blank">Unboring</a></footer> -->
+		<button id="instructionsButton">i</button>
+		<div id="instructions">
+			<!-- <h1>Hoverboard Prototype</h1> -->
+			<!-- <h2>July 19 2016</h2> -->
+			<ul>
+				<li class="command">Site 1<span class="key">1</span></li>
+				<li class="command">Site 2<span class="key">2</span></li>
+				<li class="command">Site 3<span class="key">3</span></li>
+				<!-- <li class="command">Click<span class="key">click</span></li> -->
+				<li class="command">Toggle FOV overlay<span class="key">o</span></li>
+				<li class="command">Toggle HUD<span class="key">space</span></li>
+				<li class="command">Toggle keyboard<span class="key">k</span></li>
+				<li class="command">Toggle cinema mode<span class="key">c</span></li>
+				<!-- <li class="command">Clear scene<span class="key">d</span></li> -->
+				<li class="command">Toggle instructions<span class="key">i</span></li>
+			</ul>
+		</div>
+		<div id="fov"></div>
+		<div id="webgl"></div>
+		<script>
+			  WebVRConfig = {
+			    CARDBOARD_UI_DISABLED: false,
+			    TOUCH_PANNER_DISABLED: true,
+			  };
+		</script>
 		<script src="js/index.js"></script>
 	</body>
 </html>

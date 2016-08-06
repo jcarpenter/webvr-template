@@ -5,7 +5,7 @@ const simpleHtml = require('simple-html-index')
 
 budo('src/index.js', {
     serve: 'js/index.js',
-    live: true,
+    live: false,
     dir: __dirname + '/app',
     stream: process.stdout,
     defaultIndex: function (opt) {
@@ -15,8 +15,9 @@ budo('src/index.js', {
     },
     browserify: {
         transform: [
+            // [ 'babelify', { presets: ["es2015"] } ],
             [ 'installify', { save: true } ],
-            [ 'glslify', { global: true } ]
+            // [ 'glslify', { global: true } ]
         ]
     }
 }).on('connect', function(ev) {
